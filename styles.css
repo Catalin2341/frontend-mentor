@@ -1,243 +1,178 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
-@media screen and (min-width: 701px) {
-  body {
-    background-color: hsl(30, 38%, 92%);
-  }
-
-  main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 700px;
-    height: 525px;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 14px;
-  }
-
-  .image img {
-    max-width: 350px;
-    border-radius: 15px 0 0 15px;
-  }
-
-  .second {
-    width: 350px;
-    padding: 25px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .title {
-    font-family: "Monsterrat", sans-serif;
-    margin: 10px 0px 25px 0px;
-    font-size: 16px;
-    letter-spacing: 4px;
-    color: hsl(228, 12%, 48%);
-  }
-
-  br {
-    margin: 1px auto;
-  }
-
-  h1 {
-    font-family: "Fraunces";
-    margin: -15px 0px 30px 0px;
-    font-size: 34px;
-    font-weight: 700;
-    color: hsl(212, 21%, 14%);
-  }
-
-  .desc {
-    margin: 0px 0px 30px 0px;
-    font-family: "Monsterrat";
-    font-size: 22px;
-    color: hsl(228, 12%, 48%);
-  }
-
-  .price {
-    margin: 0px 0px 30px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .new {
-    margin: 0px;
-    font-size: 40px;
-    font-family: "Fraunces";
-    color: hsl(158, 36%, 37%);
-  }
-
-  .old {
-    margin: 0px;
-    margin-left: 50px;
-    font-size: medium;
-    color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
-  }
-
-  button {
-    font-family: "Monsterrat", sans-serif;
-    background-color: hsl(158, 36%, 37%);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 18px;
-    height: 60px;
-    width: 95%;
-    cursor: pointer;
-    justify-content: center;
-    align-items: baseline;
-    align-self: center;
-  }
-
-  button img {
-    margin-right: 15px;
-    align-self: baseline;
-  }
-
-  button:active {
-    background-color: hsl(158, 26%, 27%);
-  }
-  #mob {
-    display: none;
-  }
+form input {
+  font-size: 24px;
 }
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////*/
 
-@media screen and (max-width: 700px) {
-  body {
-    background-color: hsl(30, 38%, 92%);
-  }
+body {
+  background-color: hsl(185, 41%, 84%);
+}
 
-  main {
-    display: flex;
-    width: 100%;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 14px;
-    flex-direction: column;
-    margin: 15px auto;
-  }
+.title {
+  font-family: "Space Mono", sans-serif;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(183, 100%, 15%);
+}
 
-  br {
-    display: none;
-  }
+main {
+  font-family: "Space Mono", sans-serif;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  height: 450px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+}
 
-  .image {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-  }
+.menu {
+  width: 400px;
+  height: 400px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Space Mono";
+}
 
-  .image img {
-    /* max-width: 350px; */
-    height: 100%;
-    width: 100%;
-    border-radius: 15px 15px 0 0px;
-  }
+.menu input {
+  font-family: "Space Mono";
+  color: hsl(183, 100%, 15%);
+}
 
-  .second {
-    width: inherit;
-    padding: 15px 0px 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.menu-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
-  .title {
-    font-family: "Monsterrat", sans-serif;
-    margin: 10px 0px 25px 15px;
-    font-size: 16px;
-    letter-spacing: 4px;
-    color: hsl(228, 12%, 48%);
-  }
+.menu-row label {
+  margin-bottom: 5px;
+}
 
-  br {
-    margin: 1px auto;
-  }
+.menu-row img {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 20px;
+}
 
-  h1 {
-    font-family: "Fraunces";
-    margin: -15px 0px 15px 15px;
-    font-size: 34px;
-    font-weight: 700;
-    color: hsl(212, 21%, 14%);
-  }
+.menu-row input {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  background-color: hsl(189, 41%, 97%);
+}
 
-  .desc {
-    padding: 15px 20px 0px 15px;
-    margin: 0px 0px 40px 0px;
-    font-family: "Monsterrat";
-    font-size: 19px;
-    color: hsl(228, 12%, 48%);
-  }
+.menu-row .menu-tip-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .price {
-    margin: 0px 0px 15px 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.menu-tip-row input {
+  width: 31%;
+  height: 40px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
 
-  .new {
-    margin: 0px;
-    font-size: 40px;
-    font-family: "Fraunces";
-    font-weight: 700;
-    color: hsl(158, 36%, 37%);
-  }
+.menu-tip-row input:focus {
+  background-color: hsl(172, 67%, 45%);
+}
+.menu-tip-row input:active {
+  background-color: hsl(172, 67%, 45%);
+}
 
-  .old {
-    margin: 0px;
-    margin-left: 25px;
-    font-size: large;
-    color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
-  }
+.disabled {
+  width: 31%;
+  height: 40px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
 
-  button {
-    font-family: "Monsterrat", sans-serif;
-    background-color: hsl(158, 36%, 37%);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 18px;
-    height: 60px;
-    width: 95%;
-    cursor: pointer;
-    justify-content: center;
-    align-items: baseline;
-    align-self: center;
-  }
+.result {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  button img {
-    margin-right: 15px;
-    align-self: baseline;
-  }
+.info {
+  width: 80%;
+  height: 100%;
+  /* background-color: wheat; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0px 0px 0px 0px;
+  /* align-items: center; */
+}
 
-  button:active {
-    background-color: hsl(158, 26%, 27%);
-  }
-  #desk {
-    display: none;
-  }
+.info-row {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  line-height: 20%;
+}
+
+.info-text {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: hsl(189, 41%, 97%);
+}
+.info-text .under {
+  color: hsl(184, 14%, 56%);
+  font-size: 13px;
+}
+
+.info-row .sum {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset {
+  width: 100%;
+  height: 100%;
+  /* background-color: hsl(0, 0%, 100%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset button {
+  width: 90%;
+  height: 50px;
+  align-self: flex-end;
+  margin: 0px 0px 30px 0px;
 }
