@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&display=swap");
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 700px;
+  height: 525px;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.image img {
+  max-width: 350px;
+  border-radius: 15px 0 0 15px;
+}
+
+.second {
+  width: 350px;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-family: "Monsterrat", sans-serif;
+  margin: 10px 0px 25px 0px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+}
+
+br {
+  margin: 1px auto;
+}
+
+h1 {
+  font-family: "Fraunces";
+  margin: -15px 0px 30px 0px;
+  font-size: 34px;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+.desc {
+  margin: 0px 0px 30px 0px;
+  font-family: "Monsterrat";
+  font-size: 22px;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  margin: 0px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.new {
+  margin: 0px;
+  font-size: 40px;
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+}
+
+.old {
+  margin: 0px;
+  margin-left: 50px;
+  font-size: medium;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  font-family: "Monsterrat", sans-serif;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  height: 60px;
+  width: 95%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: baseline;
+  align-self: center;
+}
+
+button img {
+  margin-right: 15px;
+  align-self: baseline;
+}
+
+button:active {
+  background-color: hsl(158, 26%, 27%);
+}
