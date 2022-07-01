@@ -1,18 +1,26 @@
 let inpt = {};
 let last = "5%";
+let pers = 0;
+let sum = 0;
 function loadInit() {
   for (let i of [...document.querySelectorAll("input[type=button]")]) {
     inpt[i.value] = false;
   }
   inpt["5%"] = true;
   last = "5%";
+  if (sum && pers) {
+    sum = 0.0;
+    pers = 0.0;
+    document.querySelector("#sum").value = "";
+    document.querySelector("#pers").value = "";
+    document.getElementById("total_tip").innerText = "$" + "0.00";
+    document.getElementById("total_sum").innerText = "$" + "0.00";
+    checkout();
+  }
   setStyle();
 }
 
 loadInit();
-
-let pers = 0;
-let sum = 0;
 
 function getSum(ev) {
   sum = parseFloat(document.getElementById(ev).value);
