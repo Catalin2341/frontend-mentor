@@ -11,10 +11,11 @@ body {
 .title {
   font-family: "Space Mono", sans-serif;
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 10%;
+  left: 51%;
   transform: translate(-50%, -50%);
   color: hsl(183, 100%, 15%);
+  letter-spacing: 10px;
 }
 
 main {
@@ -76,6 +77,17 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .menu-tip-row input {
